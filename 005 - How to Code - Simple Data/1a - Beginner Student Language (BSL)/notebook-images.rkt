@@ -1,0 +1,25 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname notebook-images) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+(require 2htdp/image)
+
+(circle 10 "solid" "red")
+(rectangle 10 20 "outline" "blue")
+(text "hello" 24 "orange")
+
+(above (circle 10 "solid" "red")
+       (circle 15 "solid" "blue")
+       (circle 20 "solid" "black"))
+(beside (circle 10 "solid" "red")
+       (circle 15 "solid" "blue")
+       (circle 20 "solid" "black"))
+(overlay (circle 10 "solid" "red")
+       (circle 15 "solid" "blue")
+       (circle 20 "solid" "black"))
+
+;Constant declerations
+(define WIDTH 400)
+(define HEIGHT 600)
+
+(* WIDTH HEIGHT)
+
